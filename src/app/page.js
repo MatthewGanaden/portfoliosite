@@ -1,13 +1,14 @@
-import video from '../assets/HomeBG.webm'
+
 import Image from 'next/image'
-import menu from '../assets/menu.svg'
+import Footer from '../components/footer'
+import Header from '../components/header/header'
 
 export default function Home() {
   return (
     <div>
       <div className="flex flex-col gap-8 box-border mx-11 my-6 px-14 rounded-3xl bg-neutral-900 relative z-50 h-[calc(100vh-3rem)]">
         <div className="flex justify-between items-center pt-6">
-          <Image src={`/logo.png`} width={1080} height={1080} className="h-9 sm:h-14 mr-20 w-max" alt="Flowbite React Logo"/>
+            <Image src={`/logo.png`} width={1080} height={1080} className="h-9 sm:h-14 mr-20 w-max" alt="Logo"/>
             <div>
               <ul className="hidden lg:flex gap-16">
                 <li><a href="">Home</a></li>
@@ -19,20 +20,22 @@ export default function Home() {
               <div className="translate-y-0 opacity-100 transition group-hover:-translate-y-[150%] group-hover:opacity-0">Download Resume</div>
               <div className="absolute translate-y-[150%] opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100">
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6">
-                  <path d="M7.5 2C7.77614 2 8 2.22386 8 2.5L8 11.2929L11.1464 8.14645C11.3417 7.95118 11.6583 7.95118 11.8536 8.14645C12.0488 8.34171 12.0488 8.65829 11.8536 8.85355L7.85355 12.8536C7.75979 12.9473 7.63261 13 7.5 13C7.36739 13 7.24021 12.9473 7.14645 12.8536L3.14645 8.85355C2.95118 8.65829 2.95118 8.34171 3.14645 8.14645C3.34171 7.95118 3.65829 7.95118 3.85355 8.14645L7 11.2929L7 2.5C7 2.22386 7.22386 2 7.5 2Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                  <path d="M7.5 2C7.77614 2 8 2.22386 8 2.5L8 11.2929L11.1464 8.14645C11.3417 7.95118 11.6583 7.95118 11.8536 8.14645C12.0488 8.34171 12.0488 8.65829 11.8536 8.85355L7.85355 12.8536C7.75979 12.9473 7.63261 13 7.5 13C7.36739 13 7.24021 12.9473 7.14645 12.8536L3.14645 8.85355C2.95118 8.65829 2.95118 8.34171 3.14645 8.14645C3.34171 7.95118 3.65829 7.95118 3.85355 8.14645L7 11.2929L7 2.5C7 2.22386 7.22386 2 7.5 2Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd"></path>
                 </svg>
               </div>
             </button>
-                
+            <div className="sm:block lg:hidden">
+                <Header/>
             </div>
-                <div className="flex gap-10 items-center justify-between pt-32">
+        </div>
+                <div className="flex gap-10 items-center justify-between pt-10">
                     <h1 className="font-bold text-4xl leading-none max-w-md">Full Stack Developer</h1>
                     <span className="hidden lg:block text-xl leading-tight max-w-md">I like to challenge myself through developing websites, enhancing my skills and satisfying client needs and requirements</span>
                 </div>
 
                 <div className="border-box bg-gray-200 overflow-hidden rounded-3xl relative flex justify-center h-lvh">
                     <video className="absolute z-0 top-0 left-0 size-full object-cover" autoPlay loop muted>
-                        <source src={video} type="video/webm"/>
+                        <source src={'/HomeBG.webm'} type="video/webm"/>
                     </video>
                     <Image src={`/MattFace.png`} alt="logo" width={1000} height={1000} className="z-10 sticky w-max h-full"/>
                 </div>
@@ -54,13 +57,13 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="flex gap-20 justify-between items-center m-24">
+            <div className="flex flex-col text-center gap-20 justify-between items-center m-24 lg:flex-row lg:text-left">
                 <span className="text-xl max-w-xl">I am a fresh graduate mostly involved in developing both back-end and front-end of our projects, making our designs come to life.</span>
                 <a href="" className="group relative inline-flex p-5 items-center justify-center rounded-full border px-6 font-medium text-neutral-200 text-xl overflow-hidden transition-all duration-300 ease-in-out hover:text-neutral-900">
                     <span className="relative z-10">About Me</span>
                     <div className="relative z-10 ml-1 -rotate-45 transition-all duration-200 group-hover:rotate-0">
                       <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5">
-                        <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fillRule="evenodd" clip-rule="evenodd"></path>
+                        <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd"></path>
                       </svg>
                     </div>
                     <span className="absolute inset-0 overflow-hidden rounded-md">
@@ -157,7 +160,7 @@ export default function Home() {
                             <span className="relative z-10">Visit Site</span>
                             <div className="relative z-10 w-0 translate-x-[100%] pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-1 group-hover:opacity-100">
                                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5">
-                                    <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fillRule="evenodd" clip-rule="evenodd"></path>
+                                    <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd"></path>
                                 </svg>
                             </div>
                             <span className="absolute left-0 aspect-square w-full origin-center translate-x-full rounded-full bg-white transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
@@ -178,7 +181,7 @@ export default function Home() {
                             <span className="relative z-10">Visit Site</span>
                             <div className="relative z-10 w-0 translate-x-[100%] pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-1 group-hover:opacity-100">
                                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5">
-                                    <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fillRule="evenodd" clip-rule="evenodd"></path>
+                                    <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd"></path>
                                 </svg>
                             </div>
                             <span className="absolute left-0 aspect-square w-full origin-center translate-x-full rounded-full bg-white transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
@@ -201,7 +204,7 @@ export default function Home() {
                     </div>
                     <a href="" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-neutral-900">
                         <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+5rem)]"></span>
-                        <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full">
+                        <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full gap-5">
                             <span>Philippine Start-up Challenge (PSC) 2021 Regional Champion</span>
                             <span>Department of Information and Communications Technology (DICT)</span>
                             <span className="justify-self-end">2021</span>
@@ -209,18 +212,18 @@ export default function Home() {
                     </a>
                     <a href="" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-neutral-900">
                         <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+5rem)]"></span>
-                        <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full">
-                            <span>Philippine Start-up Challenge (PSC) 2021 Regional Champion</span>
-                            <span>Department of Information and Communications Technology (DICT)</span>
-                            <span className="justify-self-end">2021</span>
+                        <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full gap-5">
+                            <span>AMY IP Awards 2023 Finalist</span>
+                            <span>Alfredo M. Yao Intellectual Property Awards</span>
+                            <span className="justify-self-end">2023</span>
                         </div>
                     </a>
                     <a href="" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-neutral-900">
                         <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+5rem)]"></span>
-                        <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full">
-                            <span>Philippine Start-up Challenge (PSC) 2021 Regional Champion</span>
+                        <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full gap-5">
+                            <span>Philippine Start-up Challenge (PSC) 2023 Regional Finalist</span>
                             <span>Department of Information and Communications Technology (DICT)</span>
-                            <span className="justify-self-end">2021</span>
+                            <span className="justify-self-end">2023</span>
                         </div>
                     </a>
                 </div>
@@ -236,30 +239,24 @@ export default function Home() {
                     </div>
                     <a href="" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-gray-800">
                         <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+5rem)]"></span>
-                        <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full">
-                            <span>Philippine Start-up Challenge (PSC) 2021 Regional Champion</span>
-                            <span>Department of Information and Communications Technology (DICT)</span>
-                            <span className="justify-self-end">2021</span>
+                        <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full gap-5">
+                            <span>Foundations of User Experience (UX) Desing</span>
+                            <span>Google</span>
+                            <span className="justify-self-end">2024</span>
                         </div>
                     </a>
                     <a href="" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-gray-800">
                         <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+5rem)]"></span>
-                        <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full">
-                            <span>Philippine Start-up Challenge (PSC) 2021 Regional Champion</span>
-                            <span>Department of Information and Communications Technology (DICT)</span>
-                            <span className="justify-self-end">2021</span>
-                        </div>
-                    </a>
-                    <a href="" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-gray-800">
-                        <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+5rem)]"></span>
-                        <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full">
-                            <span>Philippine Start-up Challenge (PSC) 2021 Regional Champion</span>
-                            <span>Department of Information and Communications Technology (DICT)</span>
-                            <span className="justify-self-end">2021</span>
+                        <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full gap-5">
+                            <span>Fundamentals of Deep Learning</span>
+                            <span>Nvidia</span>
+                            <span className="justify-self-end">2023</span>
                         </div>
                     </a>
                 </div>
             </div>
+
+            <Footer />
         </div>
   );
 }
