@@ -29,7 +29,7 @@ export default function Home() {
             </button>
         </div>
                 <div className="flex gap-10 items-center justify-between pt-10">
-                    <h1 className="font-bold text-4xl leading-none lg:max-w-md">Full Stack Developer</h1>
+                    <h1 className="font-bold text-4xl leading-none w-10 md:w-5/6">Full Stack Developer</h1>
                     <span className="hidden lg:block text-xl leading-tight max-w-md">I like to challenge myself through developing websites, enhancing my skills and satisfying client needs and requirements</span>
                 </div>
 
@@ -57,7 +57,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="flex flex-col text-center gap-20 justify-between items-center m-24 lg:flex-row lg:text-left">
+            <div className="flex flex-col text-center gap-20 justify-between items-center lg:mx-24 my-24 lg:flex-row lg:text-left">
                 <span className="text-xl max-w-xl">I am a fresh graduate mostly involved in developing both back-end and front-end of our projects, making our designs come to life.</span>
                 <a href="" className="group relative inline-flex p-5 items-center justify-center rounded-full border px-6 font-medium text-neutral-200 text-xl overflow-hidden transition-all duration-300 ease-in-out hover:text-neutral-900">
                     <span className="relative z-10">About Me</span>
@@ -75,21 +75,21 @@ export default function Home() {
                 <span className="font-semibold text-3xl text-green-500">What I do</span>
                 <div className="flex flex-col lg:flex-row flex-grow gap-5">
                     <div className="bg-neutral-900 rounded-3xl p-11">
-                        <div className="pt-64 pr-14 pb-6">
+                        <div className="pt-16 lg:pt-64 pr-14 pb-6">
                             <Image src={`/Design.svg`} alt="design" width={1000} height={1000} className="w-max"/>
                             <h2 className="text-2xl font-bold text-pink-400">Design</h2>
                             <span>Started from photo manipulation and video editing to designing web and mobile applications</span>
                         </div>
                     </div>
                     <div className="bg-neutral-900 rounded-3xl p-11">
-                        <div className="pt-64 pr-14 pb-6">
+                        <div className="pt-16 lg:pt-64 pr-14 pb-6">
                           <Image src={`/Code.svg`} alt="code" width={1000} height={1000} className="w-max"/>
                             <h2 className="text-2xl font-bold text-green-500">Code</h2>
                             <span>Started from photo manipulation and video editing to designing web and mobile applications</span>
                         </div>
                     </div>
                     <div className="bg-neutral-900 rounded-3xl p-11">
-                        <div className="pt-64 pr-14 pb-6">
+                        <div className="pt-16 lg:pt-64 pr-14 pb-6">
                           <Image src={`/Test.svg`} alt="test" width={1000} height={1000} className="w-max"/>
                             <h2 className="text-2xl font-bold text-sky-600">Test</h2>
                             <span>Started from photo manipulation and video editing to designing web and mobile applications</span>
@@ -194,7 +194,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="flex flex-col m-24 lg:flex-row">
+            <div className="flex flex-col m-6 my-24 lg:m-24 lg:flex-row">
                 <span className="font-semibold text-3xl">Awards</span>
                 <div className="flex flex-col w-full pt-10 lg:pl-36">
                     <div className="grid grid-cols-[3fr_3fr_1fr] px-10 pb-4 border-b">
@@ -229,7 +229,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="flex flex-col m-24 lg:flex-row">
+            <div className="flex flex-col m-6 my-24 lg:m-24 lg:flex-row">
                 <span className="font-semibold text-3xl">Certificates</span>
                 <div className="flex flex-col w-full pt-10 lg:pl-36">
                     <div className="grid grid-cols-[3fr_3fr_1fr] px-10 pb-4 border-b">

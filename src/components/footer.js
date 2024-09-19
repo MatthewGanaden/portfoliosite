@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function footer() {
     return (
         <div>
-            <div className="relative grid grid-cols-3 gap-8 box-border mx-11 mt-6 p-14 rounded-t-3xl bg-neutral-900">
+            <div className="relative grid grid-cols-3 gap-8 box-border lg:mx-11 mt-6 p-14 rounded-t-3xl bg-neutral-900">
                 <div className="hidden lg:flex border-box bg-gray-200 overflow-hidden rounded-3xl relative justify-center aspect-square w-auto max-w-96">
                     <video className="absolute z-0 top-0 left-0 size-full object-cover" autoPlay loop muted>
                         <source src={'/HomeBG.webm'} type="video/webm"/>
