@@ -18,7 +18,7 @@ export default function footer() {
                     <div className="grid grid-cols-3 grid-rows-2 h-full">       
                         <nav className="flex flex-col gap-1">
                             <span className="font-bold text-xl pb-2">Menu</span>     
-                            <a href="" className="transition-all duration-300 ease-in-out hover:text-sky-600">Home</a>
+                            <a href="/" className="transition-all duration-300 ease-in-out hover:text-sky-600">Home</a>
                             <a href="" className="transition-all duration-300 ease-in-out hover:text-sky-600">Projects</a>
                             <a href="" className="transition-all duration-300 ease-in-out hover:text-sky-600">About</a>
                         </nav>

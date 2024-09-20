@@ -11,25 +11,25 @@ export default function Home() {
         </div>
       <div className="flex flex-col px-6 gap-8 box-border lg:mx-11 lg:my-6 lg:px-14 rounded-b-3xl lg:rounded-3xl bg-neutral-900 relative z-50 h-[calc(100vh-3rem)]">
         <div className="flex justify-between items-center pt-6">
-            <Image src={`/logo.png`} width={1080} height={1080} className="h-9 sm:h-14 mr-20 w-max" alt="Logo"/>
+            <Image src={`/icon.png`} width={1080} height={1080} className="h-9 sm:h-14 mr-20 w-max" alt="Logo"/>
             <div>
                 <ul className="hidden lg:flex gap-16">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">About</a></li>
+                    <li><a href="/" className="transition-all duration-300 ease-in-out hover:text-sky-600">Home</a></li>
+                    <li><a href="" className="transition-all duration-300 ease-in-out hover:text-sky-600">Projects</a></li>
+                    <li><a href="" className="transition-all duration-300 ease-in-out hover:text-sky-600">About</a></li>
                 </ul>
             </div>
-            <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-full bg-neutral-700 px-6 font-medium text-neutral-200 duration-500">
+            <a href="/GANADEN, Matthew Jason RESUME.pdf" download className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-full bg-neutral-700 px-6 font-medium text-neutral-200 duration-500">
                 <div className="translate-y-0 opacity-100 transition group-hover:-translate-y-[150%] group-hover:opacity-0">Download Resume</div>
                     <div className="absolute translate-y-[150%] opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6">
                         <path d="M7.5 2C7.77614 2 8 2.22386 8 2.5L8 11.2929L11.1464 8.14645C11.3417 7.95118 11.6583 7.95118 11.8536 8.14645C12.0488 8.34171 12.0488 8.65829 11.8536 8.85355L7.85355 12.8536C7.75979 12.9473 7.63261 13 7.5 13C7.36739 13 7.24021 12.9473 7.14645 12.8536L3.14645 8.85355C2.95118 8.65829 2.95118 8.34171 3.14645 8.14645C3.34171 7.95118 3.65829 7.95118 3.85355 8.14645L7 11.2929L7 2.5C7 2.22386 7.22386 2 7.5 2Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd"></path>
                     </svg>
                 </div>
-            </button>
+            </a>
         </div>
                 <div className="flex gap-10 items-center justify-between pt-10">
-                    <h1 className="font-bold text-4xl leading-none w-10 md:w-5/6">Full Stack Developer</h1>
+                    <h1 className="font-bold text-3xl lg:text-4xl leading-none w-1/2 lg:w-1/4">Full Stack Developer</h1>
                     <span className="hidden lg:block text-xl leading-tight max-w-md">I like to challenge myself through developing websites, enhancing my skills and satisfying client needs and requirements</span>
                 </div>
 
@@ -46,7 +46,7 @@ export default function Home() {
                         <span>Coding</span>
                     </div>
 
-                    <div className="hidden lg:flex gap-5 text-base items-center text-primarytext ">
+                    <div className="hidden gap-5 text-base items-center text-primarytext ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" className="fill-white"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" className="fill-white"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
                     </div>
@@ -174,10 +174,10 @@ export default function Home() {
                 </div>
                 <div className="flex gap-8 p-14 rounded-3xl bg-neutral-900 w-full justify-between items-center">
                     <div className="flex flex-col">
-                        <h2 className="font-bold text-2xl text-sky-600">MatthewGanaden</h2>
+                        <h2 className="font-bold text-2xl text-sky-600">MJDGanaden</h2>
                         <span>Started from photo manipulation and video editing to designing web and mobile applications</span>
                         
-                        <a href="" className="mt-5 group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-full bg-neutral-700 px-6 font-medium w-36 transition-colors duration-300 ease-in-out hover:text-neutral-900">
+                        <a href="/" className="mt-5 group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-full bg-neutral-700 px-6 font-medium w-36 transition-colors duration-300 ease-in-out hover:text-neutral-900">
                             <span className="relative z-10">Visit Site</span>
                             <div className="relative z-10 w-0 translate-x-[100%] pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-1 group-hover:opacity-100">
                                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5">
@@ -202,24 +202,24 @@ export default function Home() {
                         <span>Agency</span>
                         <span className="justify-self-end">Date</span>
                     </div>
-                    <a href="" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-neutral-900">
-                        <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+5rem)]"></span>
+                    <a href="https://www.facebook.com/photo?fbid=124150950183349&set=pcb.124151813516596" target="_blank" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-gray-800">
+                    <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+20rem)]"></span>
                         <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full gap-5">
                             <span>Philippine Start-up Challenge (PSC) 2021 Regional Champion</span>
                             <span>Department of Information and Communications Technology (DICT)</span>
                             <span className="justify-self-end">2021</span>
                         </div>
                     </a>
-                    <a href="" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-neutral-900">
-                        <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+5rem)]"></span>
+                    <a href="https://www.facebook.com/photo/?fbid=338122131917540&set=a.196358472760574" target="_blank" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-gray-800">
+                    <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+20rem)]"></span>
                         <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full gap-5">
                             <span>AMY IP Awards 2023 Finalist</span>
                             <span>Alfredo M. Yao Intellectual Property Awards</span>
                             <span className="justify-self-end">2023</span>
                         </div>
                     </a>
-                    <a href="" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-neutral-900">
-                        <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+5rem)]"></span>
+                    <a href="https://www.facebook.com/photo/?fbid=341555631778926&set=pcb.341560141778475" target="_blank" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-gray-800">
+                        <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+20rem)]"></span>
                         <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full gap-5">
                             <span>Philippine Start-up Challenge (PSC) 2023 Regional Finalist</span>
                             <span>Department of Information and Communications Technology (DICT)</span>
@@ -237,16 +237,16 @@ export default function Home() {
                         <span>Agency</span>
                         <span className="justify-self-end">Date</span>
                     </div>
-                    <a href="" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-gray-800">
-                        <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+5rem)]"></span>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/KDNQ6KNQVRQ9" target="_blank" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-gray-800">
+                    <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+20rem)]"></span>
                         <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full gap-5">
-                            <span>Foundations of User Experience (UX) Desing</span>
+                            <span>Foundations of User Experience (UX) Design</span>
                             <span>Google</span>
                             <span className="justify-self-end">2024</span>
                         </div>
                     </a>
-                    <a href="" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-gray-800">
-                        <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+5rem)]"></span>
+                    <a href="https://learn.nvidia.com/certificates?id=NoZPUZ5GSNm6f0vwrQRO_Q" target="_blank" className="group inline-flex relative p-10 items-center justify-center overflow-hidden border-b border-white text-white transition-all duration-500 ease-in-out hover:text-gray-800">
+                    <span className="absolute h-0 w-0 rounded-full bg-white transition-all duration-500 group-hover:h-56 group-hover:w-[calc(100%+20rem)]"></span>
                         <div className="relative grid grid-cols-[3fr_3fr_1fr] w-full gap-5">
                             <span>Fundamentals of Deep Learning</span>
                             <span>Nvidia</span>
