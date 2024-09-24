@@ -2,11 +2,12 @@
 import Image from 'next/image'
 import Footer from '../components/footer'
 import Header from '../components/header/header'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <div>
-        <div className="flex lg:hidden">
+        <div className="absolute lg:hidden">
             <Header/>
         </div>
       <div className="flex flex-col px-6 gap-8 box-border lg:mx-11 lg:my-6 lg:px-14 rounded-b-3xl lg:rounded-3xl bg-neutral-900 relative z-50 h-[calc(100vh-3rem)]">
@@ -14,9 +15,9 @@ export default function Home() {
             <Image src={`/icon.png`} width={1080} height={1080} className="h-9 sm:h-14 mr-20 w-max" alt="Logo"/>
             <div>
                 <ul className="hidden lg:flex gap-16">
-                    <li><a href="/" className="transition-all duration-300 ease-in-out hover:text-sky-600">Home</a></li>
+                    <li><Link href="/" className="transition-all duration-300 ease-in-out hover:text-sky-600">Home</Link></li>
                     <li><a href="" className="transition-all duration-300 ease-in-out hover:text-sky-600">Projects</a></li>
-                    <li><a href="" className="transition-all duration-300 ease-in-out hover:text-sky-600">About</a></li>
+                    <li><Link href="/about" className="transition-all duration-300 ease-in-out hover:text-sky-600">About</Link></li>
                 </ul>
             </div>
             <a href="/GANADEN, Matthew Jason RESUME.pdf" download className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-full bg-neutral-700 px-6 font-medium text-neutral-200 duration-500">
