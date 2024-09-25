@@ -15,7 +15,7 @@ export default function Home() {
             <Image src={`/icon.png`} width={1080} height={1080} className="h-9 sm:h-14 mr-20 w-max" alt="Logo"/>
             <div>
                 <ul className="hidden lg:flex gap-16">
-                    <li><Link href="/" className="transition-all duration-300 ease-in-out hover:text-sky-600">Home</Link></li>
+                    <li><Link href="/" className="transition-all duration-300 ease-in-out text-sky-600">Home</Link></li>
                     <li><a href="" className="transition-all duration-300 ease-in-out hover:text-sky-600">Projects</a></li>
                     <li><Link href="/about" className="transition-all duration-300 ease-in-out hover:text-sky-600">About</Link></li>
                 </ul>
