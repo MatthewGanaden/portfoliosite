@@ -154,10 +154,10 @@ export default function Home() {
                 <span className="font-semibold text-3xl">Projects</span>
                 <div className="flex gap-8 p-14 rounded-3xl bg-neutral-900 w-full justify-between items-center">
                     <div className="flex flex-col">
-                        <h2 className="font-bold text-2xl text-sky-600">DDStudios</h2>
-                        <span>Started from photo manipulation and video editing to designing web and mobile applications</span>
+                        <h2 className="font-bold text-2xl text-sky-600">MJGANADEN</h2>
+                        <span>My latest portfolio site made with React</span>
 
-                        <a href="https://ddstudiosph.com/" target="_blank" className="mt-5 group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-full bg-neutral-700 px-6 font-medium w-36 transition-colors duration-300 ease-in-out hover:text-neutral-900">
+                        <a href="https://mjganaden.vercel.app/" target="_blank" className="mt-5 group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-full bg-neutral-700 px-6 font-medium w-36 transition-colors duration-300 ease-in-out hover:text-neutral-900">
                             <span className="relative z-10">Visit Site</span>
                             <div className="relative z-10 w-0 translate-x-[100%] pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-1 group-hover:opacity-100">
                                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5">
@@ -170,13 +170,13 @@ export default function Home() {
                     </div>
                     <div className="hidden md:flex md:flex-col text-right">
                         <h3 className="font-bold text-xl">Development & Deployment</h3>
-                        <span>Wordpress</span>
+                        <span>React, Figma</span>
                     </div>
                 </div>
                 <div className="flex gap-8 p-14 rounded-3xl bg-neutral-900 w-full justify-between items-center">
                     <div className="flex flex-col">
                         <h2 className="font-bold text-2xl text-sky-600">MJDGanaden</h2>
-                        <span>Started from photo manipulation and video editing to designing web and mobile applications</span>
+                        <span>Portfolio site made with Next.js </span>
                         
                         <a href="/" className="mt-5 group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-full bg-neutral-700 px-6 font-medium w-36 transition-colors duration-300 ease-in-out hover:text-neutral-900">
                             <span className="relative z-10">Visit Site</span>
@@ -191,6 +191,26 @@ export default function Home() {
                     <div className="hidden md:flex md:flex-col text-right">
                         <h3 className="font-bold text-xl">Development & Deployment</h3>
                         <span>React, Figma, Photoshop, After Effects, Premiere Pro</span>
+                    </div>
+                </div>
+                <div className="flex gap-8 p-14 rounded-3xl bg-neutral-900 w-full justify-between items-center">
+                    <div className="flex flex-col">
+                        <h2 className="font-bold text-2xl text-sky-600">MatthewGanaden</h2>
+                        <span>Portfolio site made vanilla HTML, CSS, and Javascript</span>
+                        
+                        <a href="https://matthewganaden.github.io/" className="mt-5 group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-full bg-neutral-700 px-6 font-medium w-36 transition-colors duration-300 ease-in-out hover:text-neutral-900">
+                            <span className="relative z-10">Visit Site</span>
+                            <div className="relative z-10 w-0 translate-x-[100%] pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-1 group-hover:opacity-100">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5">
+                                    <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <span className="absolute left-0 aspect-square w-full origin-center translate-x-full rounded-full bg-white transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
+                        </a>
+                    </div>
+                    <div className="hidden md:flex md:flex-col text-right">
+                        <h3 className="font-bold text-xl">Development & Deployment</h3>
+                        <span>HTML, CSS, Javascript, React</span>
                     </div>
                 </div>
             </div>
