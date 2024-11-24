@@ -198,7 +198,7 @@ export default function Home() {
                         <h2 className="font-bold text-2xl text-sky-600">MatthewGanaden</h2>
                         <span>Portfolio site made vanilla HTML, CSS, and Javascript</span>
                         
-                        <a href="https://matthewganaden.github.io/" className="mt-5 group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-full bg-neutral-700 px-6 font-medium w-36 transition-colors duration-300 ease-in-out hover:text-neutral-900">
+                        <a href="https://matthewganaden.github.io/" target="_blank" className="mt-5 group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-full bg-neutral-700 px-6 font-medium w-36 transition-colors duration-300 ease-in-out hover:text-neutral-900">
                             <span className="relative z-10">Visit Site</span>
                             <div className="relative z-10 w-0 translate-x-[100%] pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-1 group-hover:opacity-100">
                                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5">
