@@ -154,7 +154,7 @@ export default function Home() {
                 <span className="font-semibold text-3xl">Projects</span>
                 <div className="flex gap-8 p-14 rounded-3xl bg-neutral-900 w-full justify-between items-center">
                     <div className="flex flex-col">
-                        <h2 className="font-bold text-2xl text-sky-600">MJGANADEN</h2>
+                        <h2 className="font-bold text-2xl text-sky-600">MJGanaden</h2>
                         <span>My latest portfolio site made with React</span>
 
                         <a href="https://mjganaden.vercel.app/" target="_blank" className="mt-5 group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-full bg-neutral-700 px-6 font-medium w-36 transition-colors duration-300 ease-in-out hover:text-neutral-900">
